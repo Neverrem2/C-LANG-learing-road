@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+  int a = 1;
+  while(a<99)
+  {
+    if(a%2 == 1)
+    {
+      printf("%d, ", a);
+      a++;
+    }
+    else
+    {
+      a++;
+    }
+  }
+  if(a<100)
+  {
+    printf("%d\n", a);
+  }
+
+  return 0;
+}
