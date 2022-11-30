@@ -15,10 +15,17 @@ int main()
       a++;
     }
   }
-  if(a<100)
+  while(a<=100)
   {
-    printf("%d\n", a);
+    if(a%2 == 1)
+    {
+      printf("%d\n", a);
+      a++;
+    }
+    else
+    {
+      a++;
+    }
   }
-
   return 0;
 }
