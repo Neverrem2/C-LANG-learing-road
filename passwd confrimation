@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+  int ret = 0;
+  char passwd[20]={0};
+  int ch = 0;
+  printf("please enter the passwd\n");
+  scanf("%s", passwd);
+  while((ch = getchar()) != '\n') //enable the program to pause to let user confirm,and you cant let space as a passwd member
+  {
+    ;
+  }
+  printf("confirm(Y/N)");
+  ret = getchar();
+  if(ret == Y)
+  {
+    printf("confirmation finished\n");  
+  }
+  else
+  {
+    printf("confirmation cancelled\n");
+  }
+  return 0;
+}
